@@ -134,6 +134,36 @@
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
 			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Projects</h2>
 			<div class="mb-6">
+				<div class="inline font-sans text-company">Stateful Button Component</div>
+				<br />
+				<div class="text-description">
+					An open-source button component for React that provides clear visual feedback with full accessibility support
+					for loading/progress, success, and error states during asynchronous operations.
+				</div>
+				<ul class="mt-2 grid grid-cols-2 pl-0">
+					{@render bullet({ href: 'https://stateful-button.vercel.app', text: 'Live Demo' })}
+					{@render bullet({
+						href: 'https://github.com/nanyx95/Stateful-Button-React',
+						text: 'Project on GitHub'
+					})}
+				</ul>
+			</div>
+			<div class="mb-6">
+				<div class="inline font-sans text-company">The Story of Vito Bonanno</div>
+				<br />
+				<div class="text-description">
+					A website built with Next.js, presenting the memories from the diary of my great-grandfather, Vito Bonanno
+					(1896-1992).
+				</div>
+				<ul class="mt-2 grid grid-cols-2 pl-0">
+					{@render bullet({ href: 'https://vitobonanno.fabiosomaglia.com', text: "Vito Bonanno's Website" })}
+					{@render bullet({
+						href: 'https://github.com/nanyx95/Vito-Bonanno',
+						text: 'Project on GitHub'
+					})}
+				</ul>
+			</div>
+			<div class="mb-6">
 				<div class="inline font-sans text-company">Typing Test App</div>
 				<br />
 				<div class="text-description">
