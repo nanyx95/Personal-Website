@@ -84,7 +84,8 @@
 			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Work Experience</h2>
 			<div class="mb-6">
 				<div class="inline font-sans text-company">Accenture</div>
-				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">fall 2018–present</span><br />
+				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">fall 2018–present</span>
+				<br />
 				<div class="text-description">
 					Full Stack Developer creating web applications used daily by thousands of people, supporting business
 					operations and digital transformation.
@@ -106,7 +107,8 @@
 			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Education & Certifications</h2>
 			<div class="mb-6">
 				<div class="inline font-sans text-company">University of Turin</div>
-				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2015–2019</span><br />
+				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2015–2019</span>
+				<br />
 				<div class="text-description">
 					Bachelor of Science in Computer Science, with coursework in AI, algorithms, security, and software
 					engineering.
@@ -114,12 +116,14 @@
 			</div>
 			<div class="mb-6">
 				<div class="inline font-sans text-company">Amazon Web Services certification</div>
-				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2021 & 2024</span><br />
+				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2021 & 2024</span>
+				<br />
 				<div class="text-description">AWS Certified Cloud Practitioner.</div>
 			</div>
 			<div class="mb-6">
 				<div class="inline font-sans text-company">R3 Corda blockchain certification</div>
-				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2019</span><br />
+				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2019</span>
+				<br />
 				<div class="text-description">Corda Certified Developer.</div>
 			</div>
 		</section>
@@ -152,16 +156,30 @@
 		<!-- Skills -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
 			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Skills</h2>
-			<ul class="mt-2 space-y-1 pl-0">
-				{@render bullet('Languages: JavaScript, TypeScript, Java, HTML, CSS, SQL, Swift, SwiftUI')}
-				{@render bullet(
-					'Libraries & Frameworks: Angular, Svelte, SvelteKit, React, Next.js, Tailwind CSS, Spring Boot, Prisma'
-				)}
-				{@render bullet(
-					'Tools & Platforms: Git, GitHub, Netlify, Vercel, Docker, Jenkins, OpenShift, Apache Kafka, Jenkins, Figma'
-				)}
-				{@render bullet('Interests: iOS Dev, UI/UX design, AI, Blockchain')}
-			</ul>
+			<div class="mb-6">
+				<div class="inline font-sans text-company">Languages</div>
+				<br />
+				<div class="text-description">JavaScript, TypeScript, Java, HTML, CSS, SQL, Swift, and SwiftUI</div>
+			</div>
+			<div class="mb-6">
+				<div class="inline font-sans text-company">Libraries & Frameworks</div>
+				<br />
+				<div class="text-description">
+					Angular, Svelte, SvelteKit, React, Next.js, Node.js, Tailwind CSS, Motion, Spring Boot, Prisma, and Cypress
+				</div>
+			</div>
+			<div class="mb-6">
+				<div class="inline font-sans text-company">Tools & Platforms</div>
+				<br />
+				<div class="text-description">
+					Git, GitHub, Netlify, Vercel, Docker, Jenkins, OpenShift, Apache Kafka, Jenkins, and Figma
+				</div>
+			</div>
+			<div class="mb-6">
+				<div class="inline font-sans text-company">Interests</div>
+				<br />
+				<div class="text-description">iOS Dev, UI/UX design, AI, and Blockchain</div>
+			</div>
 		</section>
 
 		<hr class="mb-10 border-neutral-200" />
