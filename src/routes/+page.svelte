@@ -84,7 +84,7 @@
 			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">Work Experience</h2>
 			<div class="mb-6">
 				<div class="inline font-sans text-company font-stretch-90%">Accenture</div>
-				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">fall 2018–present</span>
+				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">fall 2018–summer 2025</span>
 				<br />
 				<div class="text-description">
 					Full Stack Developer creating web applications used daily by thousands of people, supporting business
