@@ -9,30 +9,28 @@
 		'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
 	--text-title: clamp(1.5rem, 7vw, 2.25rem);
-	--text-title--line-height: 1.05;
-	--text-title--font-weight: 600;
+	--text-title--line-height: 1.06;
+	--text-title--font-weight: 650;
 	--text-title--letter-spacing: -0.01em;
 
 	--text-subtitle: clamp(1rem, 4vw, 1.125rem);
-	--text-subtitle--line-height: 1.5;
-	--text-subtitle--font-weight: 400;
+	--text-subtitle--line-height: 1.7;
+	--text-subtitle--font-weight: 350;
 
-	--text-section-header: 10.5px;
+	--text-section-header: 11px;
 	--text-section-header--line-height: 1;
-	--text-section-header--font-weight: 500;
-	--text-section-header--letter-spacing: 0.14em;
+	--text-section-header--font-weight: 400;
+	--text-section-header--letter-spacing: 0.15em;
 
-	--text-company: 15.5px;
-	--text-company--line-height: 1.5;
-	--text-company--font-weight: 600;
+	--text-company: 15px;
+	--text-company--font-weight: 650;
 
 	--text-date: 12.5px;
-	--text-date--line-height: 1.5;
 	--text-date--font-weight: 400;
 
-	--text-description: 16px;
-	--text-description--line-height: 1.5;
-	--text-description--font-weight: 400;
+	--text-description: 14px;
+	--text-description--line-height: 1.7;
+	--text-description--font-weight: 350;
 
 	--color-neutral-350: oklch(78.9% 0 0);
 	--color-neutral-375: oklch(75% 0 0);

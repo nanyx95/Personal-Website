@@ -40,13 +40,13 @@
 </svelte:head>
 
 {#snippet bullet(item: any)}
-	<li class="ml-2 list-['–'] pl-2 marker:text-neutral-350">
+	<li class="ml-2 list-['–'] pl-2 text-description marker:text-neutral-350">
 		{#if typeof item === 'object' && item.href}
 			<a
 				href={item.href}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="font-normal underline decoration-neutral-300 underline-offset-2 transition-[text-decoration-color] duration-75 hover:decoration-neutral-900"
+				class="font-normal underline decoration-neutral-300 underline-offset-2 transition-[text-decoration-color] duration-75 hover:decoration-neutral-400"
 			>
 				{item.text}
 			</a>
@@ -60,7 +60,7 @@
 	<main class="w-full max-w-2xl px-4 py-12 font-serif sm:py-16">
 		<!-- Header -->
 		<header class="mb-10">
-			<h1 class="mb-3 font-sans text-title text-balance">Fabio Somaglia, software engineer</h1>
+			<h1 class="mb-3 font-sans text-title text-balance font-stretch-95%">Fabio Somaglia, software engineer</h1>
 			<p class="max-w-xl text-subtitle text-pretty text-neutral-600">
 				I'm a passionate Full Stack Developer with a Computer Science degree and {yearsOfExperience} years of experience
 				delivering impactful digital products for a variety of clients. I focus on building engaging user experiences and
@@ -69,7 +69,7 @@
 				<a
 					href="/Resume_Fabio_Somaglia.pdf"
 					target="_blank"
-					class="inline-block underline decoration-neutral-300 underline-offset-2 transition-[text-decoration-color] duration-75 hover:decoration-neutral-900"
+					class="inline-block font-normal underline decoration-neutral-300 underline-offset-2 transition-[text-decoration-color] duration-75 hover:decoration-neutral-400"
 					aria-label="Open resume in new tab"
 				>
 					Check out my Resume.
@@ -81,9 +81,9 @@
 
 		<!-- Work Experience -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
-			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Work Experience</h2>
+			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">Work Experience</h2>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Accenture</div>
+				<div class="inline font-sans text-company font-stretch-90%">Accenture</div>
 				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">fall 2018–present</span>
 				<br />
 				<div class="text-description">
@@ -104,9 +104,11 @@
 
 		<!-- Education & Certifications -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
-			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Education & Certifications</h2>
+			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">
+				Education & Certifications
+			</h2>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">University of Turin</div>
+				<div class="inline font-sans text-company font-stretch-90%">University of Turin</div>
 				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2015–2019</span>
 				<br />
 				<div class="text-description">
@@ -115,13 +117,13 @@
 				</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Amazon Web Services certification</div>
+				<div class="inline font-sans text-company font-stretch-90%">Amazon Web Services certification</div>
 				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2021 & 2024</span>
 				<br />
 				<div class="text-description">AWS Certified Cloud Practitioner.</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">R3 Corda blockchain certification</div>
+				<div class="inline font-sans text-company font-stretch-90%">R3 Corda blockchain certification</div>
 				<span class="ml-0.5 align-baseline font-serif text-date text-neutral-500 italic">2019</span>
 				<br />
 				<div class="text-description">Corda Certified Developer.</div>
@@ -132,9 +134,9 @@
 
 		<!-- Projects -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
-			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Projects</h2>
+			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">Projects</h2>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Stateful Button Component</div>
+				<div class="inline font-sans text-company font-stretch-90%">Stateful Button Component</div>
 				<br />
 				<div class="text-description">
 					An open-source button component for React that provides clear visual feedback with full accessibility support
@@ -149,7 +151,7 @@
 				</ul>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">The Story of Vito Bonanno</div>
+				<div class="inline font-sans text-company font-stretch-90%">The Story of Vito Bonanno</div>
 				<br />
 				<div class="text-description">
 					A website built with Next.js, presenting the memories from the diary of my great-grandfather, Vito Bonanno
@@ -164,7 +166,7 @@
 				</ul>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Typing Test App</div>
+				<div class="inline font-sans text-company font-stretch-90%">Typing Test App</div>
 				<br />
 				<div class="text-description">
 					Typing speed test for iOS and web, featuring a native Swift/SwiftUI app and a responsive Angular frontend,
@@ -172,7 +174,7 @@
 				</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Air Quality Alexa Skill</div>
+				<div class="inline font-sans text-company font-stretch-90%">Air Quality Alexa Skill</div>
 				<br />
 				<div class="text-description">
 					Alexa Skill providing real-time air quality data using AWS Lambda and Node.js, helping users stay informed
@@ -185,28 +187,28 @@
 
 		<!-- Skills -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
-			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Skills</h2>
+			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">Skills</h2>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Languages</div>
+				<div class="inline font-sans text-company font-stretch-90%">Languages</div>
 				<br />
 				<div class="text-description">JavaScript, TypeScript, Java, HTML, CSS, SQL, Swift, and SwiftUI</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Libraries & Frameworks</div>
+				<div class="inline font-sans text-company font-stretch-90%">Libraries & Frameworks</div>
 				<br />
 				<div class="text-description">
 					Angular, Svelte, SvelteKit, React, Next.js, Node.js, Tailwind CSS, Motion, Spring Boot, Prisma, and Cypress
 				</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Tools & Platforms</div>
+				<div class="inline font-sans text-company font-stretch-90%">Tools & Platforms</div>
 				<br />
 				<div class="text-description">
 					Git, GitHub, Netlify, Vercel, Docker, Jenkins, OpenShift, Apache Kafka, Jenkins, and Figma
 				</div>
 			</div>
 			<div class="mb-6">
-				<div class="inline font-sans text-company">Interests</div>
+				<div class="inline font-sans text-company font-stretch-90%">Interests</div>
 				<br />
 				<div class="text-description">iOS Dev, UI/UX design, AI, and Blockchain</div>
 			</div>
@@ -216,7 +218,7 @@
 
 		<!-- Elsewhere -->
 		<section class="prose mb-10 prose-neutral prose-a:text-inherit">
-			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase">Elsewhere</h2>
+			<h2 class="mb-4 font-sans text-section-header text-neutral-500 uppercase font-stretch-75%">Elsewhere</h2>
 			<div class="text-description">Connect with me on professional platforms and explore my work.</div>
 			<ul class="mt-2 space-y-1 pl-0">
 				{@render bullet({ href: '/Resume_Fabio_Somaglia.pdf', text: 'Resume' })}
