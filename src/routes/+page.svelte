@@ -3,7 +3,7 @@
 	const currentMonth = new Date().getMonth();
 	const startYear = 2018;
 	const startMonth = 8;
-	let yearsOfExperience = currentYear - startYear;
+	let yearsOfExperience = $state(currentYear - startYear);
 	if (currentMonth < startMonth) {
 		yearsOfExperience--;
 	}
