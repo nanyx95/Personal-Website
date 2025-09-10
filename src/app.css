@@ -37,15 +37,9 @@
 }
 
 html {
-	font-family: 'Geist Sans', 'ui-sans-serif', 'system-ui', 'sans-serif';
-	background-color: #fafafa;
-	color: #171717;
+	font-family: var(--font-serif);
+	background-color: var(--color-neutral-50);
+	color: var(--color-neutral-900);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
 }
