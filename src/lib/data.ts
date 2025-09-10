@@ -67,6 +67,12 @@ export const data = {
 				]
 			},
 			{
+				name: 'Personal Website',
+				description:
+					'My personal website, made with SvelteKit and Tailwind CSS, featuring a clean and minimalistic interface.',
+				links: [{ href: 'https://github.com/nanyx95/Personal-Website', text: 'Project on GitHub' }]
+			},
+			{
 				name: 'Typing Test App',
 				description:
 					'Typing speed test for iOS and web, featuring a native Swift/SwiftUI app and a responsive Angular frontend, powered by a shared Spring Boot backend.'
