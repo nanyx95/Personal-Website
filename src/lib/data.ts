@@ -2,7 +2,7 @@ export const data = {
 	header: {
 		name: 'Fabio Somaglia, software engineer',
 		description:
-			"I'm a passionate Full Stack Developer with a Computer Science degree and {yearsOfExperience} years of experience delivering impactful digital products for a variety of clients. I focus on building engaging user experiences and maintainable, scalable code. I hold AWS and Corda Blockchain certifications, and I'm currently exploring iOS development and emerging technologies.",
+			"I'm a passionate Full Stack Engineer with a Computer Science degree and {yearsOfExperience} years of experience delivering impactful digital products for a variety of clients. I focus on building engaging user experiences and maintainable, scalable code. I hold AWS and Corda Blockchain certifications, and I'm currently exploring iOS development and emerging technologies.",
 		resumeLink: '/Resume_Fabio_Somaglia.pdf',
 		resumeText: 'Check out my Resume.'
 	},
@@ -13,7 +13,7 @@ export const data = {
 				company: 'Accenture',
 				period: 'fall 2018–summer 2025',
 				description:
-					'Full Stack Developer creating web applications used daily by thousands of people, supporting business operations and digital transformation.',
+					'Full Stack Engineer creating web applications used daily by thousands of people, supporting business operations and digital transformation.',
 				tasks: [
 					'Developed and optimized web apps in Angular and Svelte for high-traffic environments',
 					'Engineered scalable architectures with Spring Boot microservices',
