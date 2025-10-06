@@ -2,9 +2,19 @@
 	import Section from '$lib/components/Section.svelte';
 	import Entry from '$lib/components/Entry.svelte';
 	import List from '$lib/components/List.svelte';
-	import { data } from '$lib/data';
 
-	const { workExperience } = data;
+	type Job = {
+		company: string;
+		period: string;
+		description: string;
+		tasks: string[];
+	};
+	type WorkExperienceProps = {
+		title: string;
+		jobs: Job[];
+	};
+
+	let { data: workExperience }: { data: WorkExperienceProps } = $props();
 </script>
 
 <Section title={workExperience.title}>

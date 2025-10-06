@@ -1,9 +1,17 @@
 <script lang="ts">
 	import Section from '$lib/components/Section.svelte';
 	import Entry from '$lib/components/Entry.svelte';
-	import { data } from '$lib/data';
 
-	const { skills } = data;
+	type Category = {
+		name: string;
+		list: string;
+	};
+	type SkillsProps = {
+		title: string;
+		categories: Category[];
+	};
+
+	let { data: skills }: { data: SkillsProps } = $props();
 </script>
 
 <Section title={skills.title}>

@@ -2,9 +2,18 @@
 	import Section from '$lib/components/Section.svelte';
 	import Entry from '$lib/components/Entry.svelte';
 	import List from '$lib/components/List.svelte';
-	import { data } from '$lib/data';
 
-	const { elsewhere } = data;
+	type Link = {
+		href: string;
+		text: string;
+	};
+	type ElsewhereProps = {
+		title: string;
+		description: string;
+		links: Link[];
+	};
+
+	let { data: elsewhere }: { data: ElsewhereProps } = $props();
 </script>
 
 <Section title={elsewhere.title}>

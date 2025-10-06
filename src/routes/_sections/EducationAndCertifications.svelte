@@ -1,9 +1,18 @@
 <script lang="ts">
 	import Section from '$lib/components/Section.svelte';
 	import Entry from '$lib/components/Entry.svelte';
-	import { data } from '$lib/data';
 
-	const { educationAndCertifications: eduCerts } = data;
+	type Item = {
+		institution: string;
+		period: string;
+		description: string;
+	};
+	type EduCertsProps = {
+		title: string;
+		items: Item[];
+	};
+
+	let { data: eduCerts }: { data: EduCertsProps } = $props();
 </script>
 
 <Section title={eduCerts.title}>

@@ -1,14 +1,18 @@
 <script lang="ts">
-	import { data } from '$lib/data';
+	type HeaderProps = {
+		name: string;
+		description: string;
+		resumeLink: string;
+		resumeText: string;
+	};
 
-	let { yearsOfExperience }: { yearsOfExperience: number } = $props();
-	const { header } = data;
+	let { data: header }: { data: HeaderProps } = $props();
 </script>
 
 <header>
 	<h1 class="-mb-2 font-sans text-title text-balance font-stretch-95%">{header.name}</h1>
 	<p class="text-subtitle text-pretty text-neutral-600">
-		{header.description.replace('{yearsOfExperience}', yearsOfExperience.toString())}
+		{header.description}
 		<a
 			href={header.resumeLink}
 			target="_blank"

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { PageProps } from './$types';
 	import Header from './_sections/Header.svelte';
 	import WorkExperience from './_sections/WorkExperience.svelte';
 	import EducationAndCertifications from './_sections/EducationAndCertifications.svelte';
@@ -7,32 +8,24 @@
 	import Elsewhere from './_sections/Elsewhere.svelte';
 	import Footer from './_sections/Footer.svelte';
 
-	const currentYear = new Date().getFullYear();
-	const currentMonth = new Date().getMonth();
-	const startYear = 2018;
-	const startMonth = 8;
-	let yearsOfExperience = $state(currentYear - startYear);
-	if (currentMonth < startMonth) {
-		yearsOfExperience--;
-	}
+	let { data }: PageProps = $props();
 </script>
 
-<div class="px-4">
-	<main class="mx-auto w-full max-w-2xl py-12 sm:py-16">
-		<div class="prose prose-neutral prose-a:text-inherit prose-hr:my-10">
-			<Header {yearsOfExperience} />
+<div class="flex justify-center px-4">
+	<div class="prose prose-neutral prose-a:text-inherit prose-hr:my-10">
+		<main class="py-12 sm:py-16">
+			<Header data={data.header} />
 			<hr class="border-neutral-200" />
-			<WorkExperience />
+			<WorkExperience data={data.workExperience} />
 			<hr class="border-neutral-200" />
-			<EducationAndCertifications />
+			<EducationAndCertifications data={data.educationAndCertifications} />
 			<hr class="border-neutral-200" />
-			<Projects />
+			<Projects data={data.projects} />
 			<hr class="border-neutral-200" />
-			<Skills />
+			<Skills data={data.skills} />
 			<hr class="border-neutral-200" />
-			<Elsewhere />
-		</div>
-	</main>
-
-	<Footer {currentYear} />
+			<Elsewhere data={data.elsewhere} />
+		</main>
+		<Footer data={data.currentYear} />
+	</div>
 </div>

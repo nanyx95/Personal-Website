@@ -2,9 +2,22 @@
 	import Section from '$lib/components/Section.svelte';
 	import Entry from '$lib/components/Entry.svelte';
 	import List from '$lib/components/List.svelte';
-	import { data } from '$lib/data';
 
-	const { projects } = data;
+	type Link = {
+		href: string;
+		text: string;
+	};
+	type Item = {
+		name: string;
+		description: string;
+		links?: Link[];
+	};
+	type ProjectsProps = {
+		title: string;
+		items: Item[];
+	};
+
+	let { data: projects }: { data: ProjectsProps } = $props();
 </script>
 
 <Section title={projects.title}>
