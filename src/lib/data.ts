@@ -15,11 +15,11 @@ export const data = {
 				description:
 					'Full Stack Engineer creating web applications used daily by thousands of people, supporting business operations and digital transformation.',
 				tasks: [
-					'Developed and optimized web apps in Angular and Svelte for high-traffic environments',
+					'Developed and optimized web apps in Angular, React, and Svelte for high-traffic environments',
 					'Engineered scalable architectures with Spring Boot microservices',
 					'Improved performance and reliability of legacy applications',
 					'Implemented secure authentication and ensured compliance with data protection standards',
-					'Mentored junior developers and fostered a collaborative team culture'
+					'Mentored junior engineers and fostered a collaborative team culture'
 				]
 			}
 		]
