@@ -1,11 +1,15 @@
 <script lang="ts">
 	type ListItem = string | { href: string; text: string };
 
-	let { items }: { items: ListItem[] } = $props();
+	interface Props {
+		items: ListItem[];
+	}
+
+	let { items }: Props = $props();
 </script>
 
 <ul class="mt-2 space-y-1 pl-0">
-	{#each items as item}
+	{#each items as item (typeof item === 'string' ? item : item.href)}
 		<li class="ml-2 list-['–'] pl-2 text-description marker:text-neutral-350">
 			{#if typeof item === 'object'}
 				<a

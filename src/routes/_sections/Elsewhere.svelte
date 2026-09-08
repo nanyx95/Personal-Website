@@ -7,13 +7,17 @@
 		href: string;
 		text: string;
 	};
-	type ElsewhereProps = {
+	type ElsewhereData = {
 		title: string;
 		description: string;
 		links: Link[];
 	};
 
-	let { data: elsewhere }: { data: ElsewhereProps } = $props();
+	interface Props {
+		data: ElsewhereData;
+	}
+
+	let { data: elsewhere }: Props = $props();
 </script>
 
 <Section title={elsewhere.title}>

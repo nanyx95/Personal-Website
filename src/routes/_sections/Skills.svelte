@@ -6,16 +6,20 @@
 		name: string;
 		list: string;
 	};
-	type SkillsProps = {
+	type SkillsData = {
 		title: string;
 		categories: Category[];
 	};
 
-	let { data: skills }: { data: SkillsProps } = $props();
+	interface Props {
+		data: SkillsData;
+	}
+
+	let { data: skills }: Props = $props();
 </script>
 
 <Section title={skills.title}>
-	{#each skills.categories as category}
+	{#each skills.categories as category (category.name)}
 		<Entry title={category.name} description={category.list} />
 	{/each}
 </Section>

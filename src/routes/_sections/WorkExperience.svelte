@@ -9,16 +9,20 @@
 		description: string;
 		tasks: string[];
 	};
-	type WorkExperienceProps = {
+	type WorkExperienceData = {
 		title: string;
 		jobs: Job[];
 	};
 
-	let { data: workExperience }: { data: WorkExperienceProps } = $props();
+	interface Props {
+		data: WorkExperienceData;
+	}
+
+	let { data: workExperience }: Props = $props();
 </script>
 
 <Section title={workExperience.title}>
-	{#each workExperience.jobs as job}
+	{#each workExperience.jobs as job (job.company)}
 		<Entry title={job.company} date={job.period} description={job.description}>
 			<List items={job.tasks} />
 		</Entry>

@@ -36,10 +36,12 @@
 	--color-neutral-375: oklch(75% 0 0);
 }
 
-html {
-	font-family: var(--font-serif);
-	background-color: var(--color-neutral-50);
-	color: var(--color-neutral-900);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@layer base {
+	html {
+		font-family: var(--font-serif);
+		background-color: var(--color-neutral-50);
+		color: var(--color-neutral-900);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }

@@ -1,12 +1,16 @@
 <script lang="ts">
-	type HeaderProps = {
+	type HeaderData = {
 		name: string;
 		description: string;
 		resumeLink: string;
 		resumeText: string;
 	};
 
-	let { data: header }: { data: HeaderProps } = $props();
+	interface Props {
+		data: HeaderData;
+	}
+
+	let { data: header }: Props = $props();
 </script>
 
 <header>

@@ -12,16 +12,20 @@
 		description: string;
 		links?: Link[];
 	};
-	type ProjectsProps = {
+	type ProjectsData = {
 		title: string;
 		items: Item[];
 	};
 
-	let { data: projects }: { data: ProjectsProps } = $props();
+	interface Props {
+		data: ProjectsData;
+	}
+
+	let { data: projects }: Props = $props();
 </script>
 
 <Section title={projects.title}>
-	{#each projects.items as item}
+	{#each projects.items as item (item.name)}
 		<Entry title={item.name} description={item.description}>
 			{#if item.links}
 				<List items={item.links} />
